@@ -1,8 +1,13 @@
+import profile from "../assets/profile.png"; // ✅ Correct way to import image
+
 export default function Hero() {
   return (
-    <section id="home" className="h-screen flex flex-col justify-center items-center text-center">
+    <section
+      id="home"
+      className="h-screen flex flex-col justify-center items-center text-center"
+    >
       <img
-        src="src/assets/profile.png"
+        src={profile}
         alt="Profile"
         className="w-40 h-40 rounded-full border-4 border-green-400 mb-6"
       />
